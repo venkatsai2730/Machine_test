@@ -1,0 +1,162 @@
+/* Page heading styling */
+.page-heading {
+    font-size: 32px;
+    font-weight: bold;
+    color: #4CAF50; /* Primary color */
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Decorative left-side line for page heading */
+.page-heading::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 60%;
+    width: 4px;
+    background-color: #4CAF50;
+}
+
+/* Responsive heading size */
+@media (max-width: 768px) {
+    .page-heading {
+        font-size: 24px;
+    }
+}
+
+/* Form container styling */
+form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #e8f4f8; /* Light color instead of white */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: formFadeIn 1s ease-out;
+}
+
+/* Form hover effect for better interaction */
+form:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Label styling for form fields */
+label {
+    display: block; /* Align labels properly */
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+/* Input, select, and file input styling */
+input[type="text"],
+input[type="email"],
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 20px; /* Consistent spacing between fields */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+/* Focus effect for better accessibility */
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+input[type="file"]:focus {
+    border-color: #4CAF50;
+    background-color: #f0fff0;
+}
+
+/* Styling for file input */
+input[type="file"] {
+    padding: 8px;
+}
+
+/* Gender and course groups */
+.gender-group,
+.course-group {
+    
+    margin-bottom: 25px;
+}
+
+.gender-group label,
+.course-group label {
+    
+    font-weight: bold;
+    color: #4CAF50;
+    margin-right: 15px; /* Align radio and checkbox labels properly */
+    display: inline-block;
+}
+
+/* Align checkbox/radio groups horizontally */
+.gender-group input,
+.course-group input {
+    
+    margin-right: 8px;
+}
+
+/* Button styling for submit */
+button[type="submit"] {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Button hover effect for better interaction */
+button[type="submit"]:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation on form load */
+@keyframes formFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive form design for smaller screens */
+@media (max-width: 768px) {
+    form {
+        padding: 20px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+
+    /* Adjust spacing and alignment for labels in mobile view */
+    div label {
+        margin-right: 10px;
+    }
+}

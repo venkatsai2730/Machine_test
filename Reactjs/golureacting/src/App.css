@@ -1,0 +1,260 @@
+/* App.css */
+
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling the login container */
+.login-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f2f5;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Form styling */
+.login-form {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  max-width: 350px;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Scale up animation on hover */
+.login-form:hover {
+  transform: scale(1.03);
+}
+
+/* Input groups styling */
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+  font-weight: 500;
+}
+
+/* Input fields styling */
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #f8f9fa;
+  color: #333;
+  outline: none;
+  font-size: 14px;
+  transition: border 0.3s ease;
+}
+
+/* Focus state for inputs */
+.input-group input:focus {
+  border: 1px solid #007bff;
+}
+
+/* Button styling */
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the heading */
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Centered content with some space between title and form */
+.login-container h1 {
+  margin-bottom: 16px;
+}
+
+/* Add smooth transitions */
+input, button {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Adding padding around the form */
+.login-container {
+  padding: 0 20px;
+}
+
+
+/* Navbar styling */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 240px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Dashboard styling */
+.dashboard {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.dashboard h1 {
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 300px;
+}
+.header-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.create-employee-button {
+  background-color: #8bc34a;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.total-count {
+  font-size: 16px;
+}
+
+.search-container {
+  margin-bottom: 15px;
+}
+
+.search-container label {
+  margin-right: 10px;
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.employee-table th, .employee-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.employee-table th {
+  background-color: #f1f1f1;
+}
+
+.employee-table img {
+  border-radius: 4px;
+}
+
+
+/* Employee list and details styling */
+.employee-list-container {
+  padding: 20px;
+}
+
+.employee-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffeb3b;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.create-employee-button {
+  background-color: #8bc34a;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-container input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Employee table */
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.employee-table th, .employee-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.employee-table th {
+  background-color: #f1f1f1;
+}
+
+.employee-table a {
+  color: #007bff;
+}
+
+.employee-table a:hover {
+  text-decoration: underline;
+}
+/* Logout styling */
+.logout {
+  text-align: center;
+  margin: 20px;
+}
